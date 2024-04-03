@@ -1,4 +1,4 @@
-cmd({
+/*cmd({
 
             pattern: "hi",           
             desc: "(menu cmdlist).",
@@ -45,3 +45,4 @@ Hi
             });
         }
     )
+*/
