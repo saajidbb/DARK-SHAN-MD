@@ -72,6 +72,7 @@
                        "pastebin-js": "latest",
                        "fb-info-video":"^1.0.2",
                        "hirunews-scraper":"^3.0.0",
+                       "hirunews-scrap":"^1.0.6",
                        "sirasa-news": "latest",
                        "tech-news-scraper": "latest",
                        "ios-news": "^1.0.0",
