@@ -175,7 +175,7 @@ const videolink = tvideo.result.url
         }
     )
   //---------------------------------------------------------------------------
-cmd({
+/*cmd({
     pattern: "wabetainfo",
     alias: ["findapk","playstore"],
     react: "🧾",
@@ -202,3 +202,4 @@ await conn.sendMessage(from,  { image: { url: images }, caption: `\n${ title }\n
 catch(e){
 console.log(e)
 }})
+*/
