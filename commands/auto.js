@@ -18,7 +18,7 @@ cmd({
         async(Void, citel, text) => {
         let buttons = [{
 
-                    buttonId: `${prefix}system`,
+                    buttonId: `system`,
                     buttonText: {
                     displayText: "System",
                     },
