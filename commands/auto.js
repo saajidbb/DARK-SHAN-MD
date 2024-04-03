@@ -1,4 +1,7 @@
-/*cmd({
+const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
+
+
+cmd({
 
             pattern: "hi",           
             desc: "(menu cmdlist).",
@@ -34,7 +37,7 @@
                 },
 
                 caption: `
-Hi
+*Hi ! ඔයාට කොහොමද ඉතින්*
 `,
 
                 footer: tlang().footer,
@@ -45,4 +48,4 @@ Hi
             });
         }
     )
-*/
+
