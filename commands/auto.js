@@ -11,9 +11,8 @@ var videotime = 36000 // 300 min
 var dlsize = 1000 // 1000mb
 
 cmd({
-            pattern: "song",
+            pattern: "test1",
             react: "🎧",
-            alias :["son","𝚢𝚝1"],
             desc: "Downloads audio from youtube.",
             category: "downloader",
             filename: __filename,
@@ -49,10 +48,13 @@ cmd({
                 quoted: citel,
             });
 
+            
+
+            
+
+
         }
     )
-
-
 cmd({
 
             pattern: "5",           
