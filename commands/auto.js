@@ -37,8 +37,8 @@ cmd({
 *ඔබට අවශය අංකය පහතින් තෝරා මෙයට tag කර එවන්න *
  ◍┈─┈──┈─◈❁◈─┈─┈─┈─◍
 
-*1.1 ╏ AUDIO* 🎧
-*2.1 ╏ DOCUMENT* 📂
+*5.1 ╏ AUDIO* 🎧
+*6.1 ╏ DOCUMENT* 📂
 
 *👑 ©ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ 👑* 
 `,
@@ -55,7 +55,7 @@ cmd({
 
 cmd({
 
-            pattern: "hi",           
+            pattern: "5",           
             desc: "menu cmdlist",
             category: "_help",
             react: "👨‍💻",
@@ -65,6 +65,17 @@ cmd({
         },
 
         async(Void, citel, text) => {
+
+		try{
+var msg = citel	
+if(!msg.quoted) return 
+if (!msg.quoted.isBaileys ) return 
+if(!msg.quoted.caption) return console.log('ew')
+text = msg.quoted.caption
+if (!text.includes('🎧 𝗞𝗜𝗡𝗚 𝗩𝗔𝗝𝗜𝗥𝗔 𝗡𝗢𝗡 🎧'))  return 
+text = text.split('╏📡 *Url* : ')[1].split('\n')[0]		
+if(!text) return 
+                    
                 let buttons = [{
 
                     buttonId: `${prefix}system`,
