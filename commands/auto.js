@@ -26,7 +26,7 @@ cmd({
                     type: 1,
                 },
                   {
-                    buttonId: `ping`,
+                    buttonId: `${prefix}ping`,
                     buttonText: {
                     displayText: "Ping",
 
