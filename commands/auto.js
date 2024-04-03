@@ -1,5 +1,5 @@
 const os = require('os');
-const { tlang, botpic,cmd, prefix, runtime,Config,formatp } = require('../lib')
+const { tlang, botpic,cmd, runtime,Config,formatp } = require('../lib')
 const axios = require('axios')
 const speed = require('performance-now')
 
@@ -36,7 +36,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/ac571cca14a9157f8e523.jpg',
                 },
 
                 caption: `
