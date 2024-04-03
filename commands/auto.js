@@ -16,23 +16,10 @@ cmd({
         },
 
         async(Void, citel, text) => {
-        let buttons = [{
-
-                    buttonId: `system`,
-                    buttonText: {
-                    displayText: "System",
-                    },
-
-                    type: 1,
-                },
-                  {
-                    buttonId: `${prefix}ping`,
-                    buttonText: {
-                    displayText: "Ping",
-
-                    },
-                    type: 1,
-                },
+        let buttons = [
+                    {buttonId: `1`,buttonText: {displayText: "System",},type: 1,
+                    {buttonId: `2`,buttonText: {displayText: "Ping",},type: 1,
+                
             ];
             let buttonMessage = {
                 image: {
