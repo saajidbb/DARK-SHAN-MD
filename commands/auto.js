@@ -1,10 +1,13 @@
-const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
+const os = require('os');
+const { tlang, botpic,cmd, prefix, runtime,Config,formatp } = require('../lib')
+const axios = require('axios')
+const speed = require('performance-now')
 
 
 cmd({
 
             pattern: "hi",           
-            desc: "(menu cmdlist).",
+            desc: "menu cmdlist",
             category: "_help",
             react: "👨‍💻",
             filename: __filename,
