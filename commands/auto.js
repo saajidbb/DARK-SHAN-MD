@@ -1,8 +1,10 @@
-const os = require('os');
-const { tlang, botpic,cmd, runtime,Config,formatp } = require('../lib')
-const axios = require('axios')
-const speed = require('performance-now')
-
+const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
+const { mediafire } = require("../lib/mediafire.js");
+const googleTTS = require("google-tts-api");
+const ytdl = require('ytdl-secktor')
+const fs = require('fs-extra')
+var videotime = 60000 // 1000 min
+var dlsize = 1000 // 1000mb
 
 cmd({
 
@@ -16,10 +18,23 @@ cmd({
         },
 
         async(Void, citel, text) => {
-        let buttons = [
-                    {buttonId: `1`,buttonText: {displayText: "System",},type: 1,
-                    {buttonId: `2`,buttonText: {displayText: "Ping",},type: 1,
-                
+                let buttons = [{
+
+                    buttonId: `${prefix}system`,
+                    buttonText: {
+                    displayText: "System",
+                    },
+
+                    type: 1,
+                },
+                  {
+                    buttonId: `ping`,
+                    buttonText: {
+                    displayText: "Ping",
+
+                    },
+                    type: 1,
+                },
             ];
             let buttonMessage = {
                 image: {
