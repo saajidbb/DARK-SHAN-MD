@@ -37,9 +37,8 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                },
                 caption: `
 
-🎧 𝗞𝗜𝗡𝗚 𝗩𝗔𝗝𝗜𝗥𝗔 𝗔𝗨𝗗𝗜𝗢 🎧
+🎧 *DARK SHAN AUDIO PLAYER* 🎧
 
-🚨 *Youtube Player* 🌿
  ◨┉━━━━╚◭☬◮╝━━━━━┉◧
 
 ╏🎀 *Title:* ${anu.title}
@@ -55,13 +54,14 @@ if (text.startsWith("https://youtube.com/shorts/")) {
 ╏📡 *Url* : ${anu.url}
 
 ◯┉━━┅━━━━━━━━━┅━━━┉◯
-*ඔබට අවශය අංකය පහතින් තෝරා මෙයට tag කර එවන්න *
+*REPLY A 🔢 NUMBERS*
  ◍┈─┈──┈─◈❁◈─┈─┈─┈─◍
 
 *1.1 ╏ AUDIO* 🎧
 *2.1 ╏ DOCUMENT* 📂
 
-*👑 ©ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ 👑* 
+*DARK SHAN YTDL*
+ ◍┈─┈──┈─◈❁◈─┈─┈─┈─◍
 `,
                 footer: tlang().footer,
                 headerType: 4,
@@ -93,7 +93,7 @@ if(!msg.quoted) return
 if (!msg.quoted.isBaileys ) return 
 if(!msg.quoted.caption) return console.log('ew')
 text = msg.quoted.caption
-if (!text.includes('🎧 𝗞𝗜𝗡𝗚 𝗩𝗔𝗝𝗜𝗥𝗔 𝗔𝗨𝗗𝗜𝗢 🎧'))  return 
+if (!text.includes('🎧 *DARK SHAN AUDIO PLAYER* 🎧'))  return 
 text = text.split('╏📡 *Url* : ')[1].split('\n')[0]		
 if(!text) return 
 await Void.sendMessage(citel.chat, { react: {  text: "🎧", key: msg.key } } )			
@@ -168,7 +168,7 @@ if(!msg.quoted) return
 if (!msg.quoted.isBaileys ) return 
 if(!msg.quoted.caption) return console.log('ew')
 text = msg.quoted.caption
-if (!text.includes('🎧 𝗞𝗜𝗡𝗚 𝗩𝗔𝗝𝗜𝗥𝗔 𝗔𝗨𝗗𝗜𝗢 🎧'))  return 
+if (!text.includes('🎧 *DARK SHAN AUDIO PLAYER* 🎧'))  return 
 text = text.split('╏📡 *Url* : ')[1].split('\n')[0]		
 if(!text) return 
 await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } )			
@@ -214,7 +214,7 @@ await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } 
                     document: fs.readFileSync(`./${randomName}`),
                     mimetype: 'audio/mpeg',
                     fileName: titleYt + ".mp3",
-		    caption: `*ᴋɪɴɢ ᴠᴀᴊɪʀᴀ ᴍᴅ 1.1* 👑`,       
+		    caption: `DARK SHAN MD`,       
                     headerType: 4,
                    
                 }
@@ -254,9 +254,8 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                },
                 caption: `
 
-🎧 𝗞𝗜𝗡𝗚 𝗩𝗔𝗝𝗜𝗥𝗔 𝗩𝗜𝗗𝗘𝗢 🎧
+🎧 DARK SHAN MD VIDEO PLAYER 🎧
 
-🚨 *Youtube Player* 🌿
  ◨┉━━━━╚◭☬◮╝━━━━━┉◧
 
 ╏🎀 *Title:* ${anu.title}
@@ -272,13 +271,15 @@ if (text.startsWith("https://youtube.com/shorts/")) {
 ╏📡 *Url* : ${anu.url}
 
 ◯┉━━┅━━━━━━━━━━┅━━━┉◯
-*ඔබට අවශය අංකය පහතින් තෝරා මෙයට tag කර එවන්න*
+*REPLY A 🔢 NUMBERS*
 ┈─┈──┈─◈❁◈─┈─┈─┈─◍
 
 *3.1 ╏ MP4 VIDEO* 📽️
 *4.1 ╏ MP4 DOCUMENT* 📂
 
-*👑 ©ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ 👑* 
+┈─┈──┈─◈❁◈─┈─┈─┈─◍
+
+*DARK SHAN YTDL*
 `,
                 footer: tlang().footer,
                 headerType: 4,
@@ -310,7 +311,7 @@ if(!msg.quoted) return
 if (!msg.quoted.isBaileys ) return 
 if(!msg.quoted.caption) return console.log('ew')
 text = msg.quoted.caption
-if (!text.includes('🎧 𝗞𝗜𝗡𝗚 𝗩𝗔𝗝𝗜𝗥𝗔 𝗩𝗜𝗗𝗘𝗢 🎧'))  return 
+if (!text.includes('🎧 DARK SHAN MD VIDEO PLAYER 🎧'))  return 
 text = text.split('╏📡 *Url* : ')[1].split('\n')[0]		
 if(!text) return 
 await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } )		// denna one react eka
@@ -337,7 +338,7 @@ await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } 
                     let buttonMessage = {
                         video: fs.readFileSync(`./${randomName}`),
                         mimetype: 'video/mp4',
-                        caption:`✅ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ ✅`,   
+                        caption:`DARK SHAN MD`,   
 		    }
                  Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                  return fs.unlinkSync(`./${randomName}`);
@@ -367,7 +368,7 @@ if(!msg.quoted) return
 if (!msg.quoted.isBaileys ) return 
 if(!msg.quoted.caption) return console.log('ew')
 text = msg.quoted.caption
-if (!text.includes('🎧 𝗞𝗜𝗡𝗚 𝗩𝗔𝗝𝗜𝗥𝗔 𝗩𝗜𝗗𝗘𝗢 🎧'))  return 
+if (!text.includes('🎧 DARK SHAN MD VIDEO PLAYER 🎧'))  return 
 text = text.split('╏📡 *Url* : ')[1].split('\n')[0]		
 if(!text) return 
 await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } )		// denna one react eka
@@ -395,7 +396,7 @@ await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } 
                          document: fs.readFileSync(`./${randomName}`),
                         mimetype: 'document/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: `✅ *ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ* ✅`,  
+                        caption: `DARK SHAN MD`,  
 		    }
                  Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                  return fs.unlinkSync(`./${randomName}`);
