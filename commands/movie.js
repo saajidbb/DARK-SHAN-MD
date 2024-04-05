@@ -3,7 +3,7 @@ const { SinhalaSub }  = require('@sl-code-lords/movie-dl')
 
 cmd(
     {
-        pattern: "movie",
+        pattern: "subdl",
         category:"downloader",
         react: "📽️",
         filename: __filename
