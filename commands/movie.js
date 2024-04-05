@@ -11,9 +11,10 @@ cmd(
     async (Void, citel, text) => {
         if (!text) return
 try {
-let movie SinhalaSub.get_list.by_search(text)
+let movie = await SinhalaSub.get_list.by_search(text)
+    const sub = movie.results.title
       
-      const cap `movie search results ${movie.results.title} echcharai`
+      const cap `movie search results ${sub} echcharai`
       
       await Void.sendMessage(citel.chat, { caption: cap }, { quoted: citel })
         }
