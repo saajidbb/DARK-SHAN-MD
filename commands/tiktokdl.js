@@ -28,17 +28,17 @@ cmd(
 ◎ *TIKTOK PLAYER*◎
 
 ┎▸▹▸▹▸▹▸▹▸▹▸▹▸◆┉┄◉┄┉◆◂◃◂◃◂◃◂◃◂◃◂┒
-📋 *TITLE* - ${key.result.info_video.title}
+📋 *TITLE* - ${data.result.info_video.title}
 
-®️ *REGION* - ${key.result.info_video.region}
+®️ *REGION* - ${data.result.info_video.region}
 
 
 
-📉 *DURATION* - ${key.result.info_video.duration}
+📉 *DURATION* - ${data.result.info_video.duration}
 
-📥 ${key.result.info_video.total_download} *DOWNLOADS*
+📥 ${data.result.info_video.total_download} *DOWNLOADS*
 
-💽 ${key.result.info_video.total_download}
+💽 ${data.result.info_video.total_download}
 
 ╭╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶ ╮
 
