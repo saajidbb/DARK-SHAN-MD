@@ -14,6 +14,7 @@ cmd(
                 citel.reply("*Please provide a valid URL* ✏️.");
                 return;
             }
+            const key = await fetchJson(`https://api.maher-zubair.tech/download/tiktok2?url=${text}`);
           const cap `🎶 *DARK SHAN MD TIKTOK DOWNLOADER* 🎶
 
 ◎ *TIKTOK PLAYER*◎
