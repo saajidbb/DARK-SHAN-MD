@@ -15,7 +15,7 @@ cmd(
                 return;
             }
 
-            const data = await fetchJson(`https://api.maher-zubair.tech/download/tiktok2?url=${text}}`);
+            const data = await fetchJson(`}`);
 
             
             
