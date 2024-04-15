@@ -78,4 +78,4 @@ add `removebg2` cmd   time 11:43   :   date 13/03/2024
 
   </details>  
 
-  https://telegra.ph/file/9401b9391ca7eb04a5b5f.jpg
+  
