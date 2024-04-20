@@ -707,6 +707,7 @@ cmd({
             use: '<quote|reply|number>',
         },
         async(Void, citel, text) => {
+            try {
             if (!citel.isGroup) return citel.reply(tlang().group);
             const groupAdmins = await getAdmin(Void, citel)
             const botNumber = await Void.decodeJid(Void.user.id)
@@ -715,22 +716,29 @@ cmd({
 
             if (!isAdmins) return citel.reply(tlang().admin);
             if (!isBotAdmins) return citel.reply(tlang().botAdmin);
-            try {
-                let kickte = `✳️ Correct use of the command\n*${Prefix}kick* @tag`
-
-if (!citel.mentionedJid[0] && !citel.quoted) return citel.reply(kickte, citel.chat, { mentions: Void.parseMention(kickte)}) 
-let user = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted.sender
-let owr = citel.chat.split`-`[0]
-await Void.groupParticipantsUpdate(citel.chat, [user], 'remove')
-citel.reply(`✅ 𝐔𝐬𝐞𝐫 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐊𝐢𝐜𝐤𝐞𝐝👋🏻`) 
-
-	    }
-            } catch {
-                //		citel.reply(tlang().botAdmin);
-
-            }
-        }
-    )
+		
+	    let metadata = await Void.groupMetadata(citel.chat);
+	    let users = citel.mentionedJid[0] ? citel.mentionedJid : citel.quoted ? [citel.quoted.sender] : [text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'];
+    let usernames = await Promise.all(users.map(async (user) => {
+      try {
+        let contact = await Void.contacts[user];
+        return contact.notify || user.split('@')[0];
+      } catch (error) {
+        return user.split('@')[0];
+      }
+    }));
+            
+          await Void.groupParticipantsUpdate(citel.chat, users, 'remove')
+      .then(() => {
+        let kickedUsernames = usernames.map(username => `@${username}`).join(', ');
+        citel.reply(`Users ${kickedUsernames} kicked successfully from the group ${metadata.subject}.`);
+      })
+      .catch(() => citel.reply('Failed to kick user(s) from the group.'));
+  } 
+	    catch (error) {
+    console.error('Error:', error);
+  }
+})  
     //---------------------------------------------------------------------------
 cmd({
             pattern: "memegen",
