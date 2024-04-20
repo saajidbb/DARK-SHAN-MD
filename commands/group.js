@@ -716,9 +716,15 @@ cmd({
             if (!isAdmins) return citel.reply(tlang().admin);
             if (!isBotAdmins) return citel.reply(tlang().botAdmin);
             try {
-                let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
-                if (!users) return;
-                await Void.groupParticipantsUpdate(citel.chat, [users], "remove");
+                let kickte = `✳️ Correct use of the command\n*${Prefix}kick* @tag`
+
+if (!citel.mentionedJid[0] && !citel.quoted) return citel.reply(kickte, citel.chat, { mentions: Void.parseMention(kickte)}) 
+let user = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted.sender
+let owr = citel.chat.split`-`[0]
+await Void.groupParticipantsUpdate(citel.chat, [user], 'remove')
+citel.reply(`✅ 𝐔𝐬𝐞𝐫 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐊𝐢𝐜𝐤𝐞𝐝👋🏻`) 
+
+	    }
             } catch {
                 //		citel.reply(tlang().botAdmin);
 
