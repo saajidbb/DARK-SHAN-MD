@@ -1,4 +1,4 @@
-const { cmd } = ('../lib')
+const { tlang, botpic, cmd, prefix, runtime, Config, formatp, fetchJson } = require('../lib')
 const Hiru = require('hirunews-scrap');
 var api = new Hiru()
 
