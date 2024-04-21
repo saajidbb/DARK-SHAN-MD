@@ -1,14 +1,12 @@
 const { cmd } = ('../lib')
 const Hiru = require('hirunews-scrap');
-const api = new Hiru()
+var api = new Hiru()
 
 cmd({
     pattern: 'puka',
-    alias: ['pakaya'],
     desc: 'whatsapp beta infomation.',
     category: 'news',
     react: "📃",
-    use: '<wbi>',
   },
         async(Void, citel, text) => {
 
