@@ -1,1 +1,1 @@
-maginawad
+ponnaya
