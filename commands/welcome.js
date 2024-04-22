@@ -19,6 +19,6 @@ for (let i=1; i<16; i++){
   textw +=`❒ 𝐓𝐈𝐓𝐋𝐄: ${news.result.[i].title}\n`
   textw +=`❒ 𝐃𝐀𝐓𝐄: ${news.result.[i].date}\n`
 } 
-        return await citel.sendMessage(textw );
+        return await citel.reply(textw );
             
     })
