@@ -19,7 +19,7 @@
 
 ### FORK REPO
 
-<a href='https://github.com/kushansewmina1234/DARK-SHAN-MD/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/FORK REPO-black?style=for-the-badge&logo=github&logoColor=white'/></a>
+<a href='https://github.com/saajidbb/DARK-SHAN-MD/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/FORK REPO-black?style=for-the-badge&logo=github&logoColor=white'/></a>
 
 
 ### SCAN QR 
@@ -28,7 +28,7 @@
 
 ### DEPLOY HEROKU
 
-<a href='https://dashboard.heroku.com/new?template=https://github.com/kushansewmina1234/DARK-SHAN-MD' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/DEPLOY HEROKU-purple?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/kushansewmina1/DARK-SHAN-MD' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/DEPLOY HEROKU-purple?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
 ### DEPLOY REPLIT
 
